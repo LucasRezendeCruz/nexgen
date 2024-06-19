@@ -50,7 +50,7 @@ use App\Library\Session;
                                     <li><a class="dropdown-item text-white" href="<?= baseUrl() ?>Categoria">Categoria</a></li>
                                     <li><a class="dropdown-item text-white" href="<?= baseUrl() ?>Produto">Produto</a></li>
                                     <li><a class="dropdown-item text-white" href="<?= baseUrl() ?>Produto">Cliente</a></li>
-                                    <li><a class="dropdown-item text-white" href="<?= baseUrl() ?>Produto">Título Financeiro</a></li>
+                                    <li><a class="dropdown-item text-white" href="<?= baseUrl() ?>TituloFinanceiro">Título Financeiro</a></li>
 
                                     <li><hr class="dropdown-divider text-white"></li>
                                     <?php if (Session::get('usuarioNivel') == 1): ?>

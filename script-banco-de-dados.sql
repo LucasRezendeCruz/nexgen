@@ -69,6 +69,23 @@ INSERT INTO `tipofinanceiro` (`id`, `descricao`, `statusRegistro`) VALUES (2, 'S
 
 -- Exportação de dados foi desmarcado.
 
+CREATE TABLE IF NOT EXISTS `titulofinanceiro` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` int NOT NULL,
+  `observacao` text ,
+  `statusTitulo` int NOT NULL DEFAULT '1' COMMENT '1=Aberto; 2=Fechado; 3=Cancelado;',
+  `dataVencimento` date NOT NULL,
+  `tipofinanceiro_id` int NOT NULL,
+  `valorBruto` decimal(14,3) NOT NULL DEFAULT '0.00',
+  `valorLiquido` decimal(14,2) NOT NULL DEFAULT '0.00',
+  `desconto` decimal(14,2) NOT NULL DEFAULT '0.00',
+  PRIMARY KEY (`id`),
+  KEY `FK1_titulofinanceiro_tipofinanceiro_id` (`tipofinanceiro_id`),
+  CONSTRAINT `FK1_titulofinanceiro_categoria_id` FOREIGN KEY (`tipofinanceiro_id`) REFERENCES `tipofinanceiro` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+-- Exportação de dados foi desmarcado.
+
 CREATE TABLE IF NOT EXISTS `cliente` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
