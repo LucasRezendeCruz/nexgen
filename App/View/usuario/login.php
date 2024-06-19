@@ -59,7 +59,7 @@ use App\Library\Formulario;
                         </div>
                         
                         <div class="col-12 form-group mt-3">
-                            <button type="submit" value="submit" class="btn btn-outline-primary">Entrar</button>
+                            <button type="submit" value="submit" class="btn btn-success">Entrar</button>
                             <a href="<?= baseUrl() ?>Login/solicitaRecuperacaoSenha" >Esqueceu a senha?</a>
                         </div>
                     </form>

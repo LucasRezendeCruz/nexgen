@@ -5,7 +5,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <h5 class="mb-0 text-white">LUCRUM</h5>
                         <div class="line bg-success"></div>
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic!</p>
+                        <p class="text-white">Desenvolvimento de um Mini ERP para Controle Financeiro</p>
                         <div class="social-icons">
                             <a href="#" class="text-white"><i class="ri-twitter-fill"></i></a>
                             <a href="#"><i class="ri-instagram-fill"></i></a>
@@ -14,17 +14,10 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <h5 class="mb-0 text-white">SERVICES</h5>
-                        <div class="line bg-success"></div>
-                        <ul>
-                            <li><a href="#">UI Design</a></li>
-                            <li><a href="#">UX Design</a></li>
-                            <li><a href="#">Branding</a></li>
-                            <li><a href="#">Logo Designing</a></li>
-                        </ul>
+                        
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <h5 class="mb-0 text-white">ABOUT</h5>
+                        <h5 class="mb-0 text-white">SOBRE</h5>
                         <div class="line bg-success"></div>
                         <ul>
                             <li><a href="#">Blog</a></li>
@@ -34,12 +27,12 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <h5 class="mb-0 text-white">CONTACT</h5>
+                        <h5 class="mb-0 text-white">CONTATO</h5>
                         <div class="line bg-success"></div>
                         <ul class="text-white">
-                            <li>New York, NY 3300</li>
-                            <li>(414) 586 - 3017</li>
-                            <li>www.example.com</li>
+                            <li>Muriaé, MG</li>
+                            <li>(32) 99971 - 1213</li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
