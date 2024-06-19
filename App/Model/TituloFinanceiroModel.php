@@ -35,12 +35,12 @@ Class TituloFinanceiroModel extends ModelMain
      * @param string $orderBy 
      * @return void
      */
-    public function lista($orderBy = 'titulo')
+    public function lista($orderBy = 'id')
     {
         $rsc = $this->db->dbSelect(
-            "SELECT f.*, c.descricao as descricaoCategoria 
+            "SELECT f.*, t.descricao as descricaoTipo 
             FROM {$this->table} AS f
-            INNER JOIN categoria as c ON c.id = f.tipofinanceiro_id
+            INNER JOIN tipofinanceiro as t ON t.id = f.tipofinanceiro_id
             ORDER BY f.{$orderBy}");
 
         if ($this->db->dbNumeroLinhas($rsc) > 0) {
@@ -60,9 +60,9 @@ Class TituloFinanceiroModel extends ModelMain
     {
         $rsc = $this->db->dbSelect("SELECT f.id, f.titulo 
                                     FROM {$this->table} as f
-                                    INNER JOIN categoria as c ON c.id = f.tipofinanceiro_id
-                                    WHERE c.id = ?
-                                    ORDER BY f.descricao",
+                                    INNER JOIN tipofinanceiro as t ON t.id = f.tipofinanceiro_id
+                                    WHERE t.id = ?
+                                    ORDER BY f.titulo",
                                     [$tipofinanceiro_id]);
 
         if ($this->db->dbNumeroLinhas($rsc) > 0) {

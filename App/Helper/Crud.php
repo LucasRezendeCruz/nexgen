@@ -57,3 +57,14 @@ function setValor($campo, $default = "")
         return $default;
     }
 }
+
+
+/**
+ * setValor
+ *
+ * @param date $data 
+ * @return date
+ */
+function formataData($data) {
+    return date("d/m/Y", strtotime($data));
+}
