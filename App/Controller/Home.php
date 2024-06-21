@@ -41,6 +41,16 @@ class Home extends ControllerMain
         $this->loadView("contato");
     }
 
+     /**
+     * contato
+     *
+     * @return void
+     */
+    public function sobrenos()
+    {
+        $this->loadView("sobrenos");
+    }
+
     /**
      * login
      *

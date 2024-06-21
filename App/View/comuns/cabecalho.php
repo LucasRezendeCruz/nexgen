@@ -11,7 +11,7 @@ use App\Library\Session;
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>LUCRUM</title>
+        <title>NEXGEN</title>
 
         <link rel="stylesheet" href="<?= baseUrl() ?>assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?= baseUrl() ?>assets/vendors/fontawesome/css/all.min.css">
@@ -24,18 +24,25 @@ use App\Library\Session;
     </head>
     <body style="background-color:#eaeaea">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container">                
-                <a href="<?= baseUrl() ?>home" class="navbar-brand text-white">LUCRUM</a>
+                <a href="<?= baseUrl() ?>home" class="navbar-brand text-white" >NEXGEN</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                        <?php if (Session::get('usuarioId') != false): ?>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="<?= baseUrl() ?>/Home/homeAdmin">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="<?= baseUrl() ?>/Home/sobrenos">Sobre Nós</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="<?= baseUrl() ?>/Home/contato">Contato</a>
+                        </li>
+                    
+                        <?php if (Session::get('usuarioId') != false): ?>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="<?= baseUrl() ?>/Home/homeAdmin">Home</a>
+                            </li>
                         <!--<li class="nav-item">
                             <a class="nav-link text-white" href="<?= baseUrl() ?>/Home/produto">Produto</a>
                         </li>-->
@@ -63,7 +70,7 @@ use App\Library\Session;
                             </li>
 
                         <?php else: ?>
-
+                            
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="<?= baseUrl() ?>Home/Login">Login</a>
                             </li>
