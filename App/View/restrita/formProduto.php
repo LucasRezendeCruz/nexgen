@@ -6,7 +6,7 @@
 
 <script src="<?= baseUrl() ?>assets/ckeditor5/ckeditor.js"></script>
 
-<div class="container mt-3">
+<div class="container mt-3 mb-5">
     
     <?= Formulario::titulo('Produto', false, true) ?>
 

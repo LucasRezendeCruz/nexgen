@@ -14,7 +14,7 @@ use App\Library\Formulario;
     </div>
 </section>
 
-<section class="login_box_area section-margin">
+<section class="login_box_area section-margin mb-5  ">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">

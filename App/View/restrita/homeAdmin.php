@@ -11,7 +11,7 @@ use App\Library\Session;
             <div class="mt-5 mb-5 text-left">
                 <h1 class="text-success">Home da área Administrativa</h1>
                 <div class="date">
-                    <input style="border-radius: 0.4rem; background: transparent; display: inline-block; background-color: rgba(132, 139, 200, 0.18);" id="dataatual" type="date" value="<?php echo date('Y-m-d'); ?>">
+                    <input readonly style="border-radius: 0.4rem; background: transparent; display: inline-block; background-color: rgba(132, 139, 200, 0.18); text-align:center;" id="dataatual" type="date" value="<?php echo date('Y-m-d'); ?>">
                 </div>
             </div>
         </div>

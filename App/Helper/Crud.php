@@ -27,9 +27,14 @@ function getStatus($statusRegistro)
  * @return string
  */
 function formataValor($valor, $decimais = 2)
-{
-    return number_format($valor, $decimais, ",", ".");
-}
+    {
+        // Remove qualquer ponto ou vírgula e converte para float
+        $valor = str_replace(',', '.', str_replace('.', '', $valor));
+        $valor = (float)$valor;
+
+        // Formata o valor para o padrão brasileiro
+        return number_format($valor, $decimais, ',', '.');
+    }
 
 /**
  * strNumber

@@ -6,7 +6,7 @@ use App\Library\Session;
     <div class="container">
         <div class="blog-banner">
             <div class="mt-5 mb-5 text-left">
-                <h1 style="color: #384aeb;">Solicita Recuperação de Senha</h1>
+                <h1 class="text-success" >Solicita Recuperação de Senha</h1>
             </div>
         </div>
     </div>
@@ -14,7 +14,7 @@ use App\Library\Session;
 
 <section class="section-margin section-login">
     
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         
         <div class="row">
             <div class="col-lg-4">

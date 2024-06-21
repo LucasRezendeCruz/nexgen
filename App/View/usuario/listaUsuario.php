@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-5 mb-5">
     <?php
 
     use App\Library\Formulario;

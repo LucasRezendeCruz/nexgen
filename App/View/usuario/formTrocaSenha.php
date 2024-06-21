@@ -11,7 +11,7 @@ use App\Library\Session;
     <div class="container">
         <div class="blog-banner">
             <div class="mt-5 mb-5 text-left">
-                <h1 style="color: #384aeb;">Trocar Senha</h1>
+                <h1 class="text-success">Trocar Senha</h1>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@ use App\Library\Formulario;
 
 ?>
 
-<div class="container mt-3">
+<div class="container mt-3 mb-5">
     
     <?= Formulario::titulo('Categoria', false, true) ?>
 

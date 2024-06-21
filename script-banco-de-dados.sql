@@ -76,9 +76,9 @@ CREATE TABLE IF NOT EXISTS `titulofinanceiro` (
   `statusTitulo` int NOT NULL DEFAULT '1' COMMENT '1=Aberto; 2=Fechado; 3=Cancelado;',
   `dataVencimento` date NOT NULL,
   `tipofinanceiro_id` int NOT NULL,
-  `valorBruto` decimal(14,3) NOT NULL DEFAULT '0.00',
-  `valorLiquido` decimal(14,2) NOT NULL DEFAULT '0.00',
-  `desconto` decimal(14,2) NOT NULL DEFAULT '0.00',
+  `valorBruto` decimal(14,3) NOT NULL ,
+  `valorLiquido` decimal(14,2) NOT NULL ,
+  `desconto` decimal(14,2) DEFAULT '0.00',
   PRIMARY KEY (`id`),
   KEY `FK1_titulofinanceiro_tipofinanceiro_id` (`tipofinanceiro_id`),
   CONSTRAINT `FK1_titulofinanceiro_categoria_id` FOREIGN KEY (`tipofinanceiro_id`) REFERENCES `tipofinanceiro` (`id`)

@@ -24,9 +24,9 @@ class Formulario
         $html = '<div class="container-fluid">';
             $html .= '<div class="row">';
 
-                $html .= '<div class="col-10"><h2>' . $titulo . '</h2></div>';
+                $html .= '<div class="col-10 mt-5"><h2>' . $titulo . '</h2></div>';
 
-                $html .= '<div class="col-2 text-end">';
+                $html .= '<div class="col-2 text-end mt-5">';
 
                     if ($btNew) {
                         $html .= Formulario::botao('insert');
@@ -61,13 +61,13 @@ class Formulario
         $url = baseUrl() . $service->getController();
 
         if ($tipo == 'insert') {
-            $htmlBt = '<a href="' . $url . '/form/insert/0" title="Inclusão"><i class="fa fa-plus" area-hidden="true"></i></a>';
+            $htmlBt = '<a href="' . $url . '/form/insert/0" title="Inclusão" ><i class="fa fa-plus text-success" area-hidden="true"></i></a>';
         } elseif ($tipo == 'update') {
-            $htmlBt = '<a href="' . $url . '/form/update/' . $id . '" title="Alteração"><i class="fa fa-file" area-hidden="true"></i></a>&nbsp;&nbsp;';
+            $htmlBt = '<a href="' . $url . '/form/update/' . $id . '" title="Alteração"><i class="fa fa-file text-success" area-hidden="true"></i></a>&nbsp;&nbsp;';
         } elseif ($tipo == 'delete') {
-            $htmlBt = '<a href="' . $url . '/form/delete/' . $id . '" title="Exclusão"><i class="fa fa-trash" area-hidden="true"></i></a>&nbsp;&nbsp;';
+            $htmlBt = '<a href="' . $url . '/form/delete/' . $id . '" title="Exclusão"><i class="fa fa-trash text-success" area-hidden="true"></i></a>&nbsp;&nbsp;';
         } elseif ($tipo == 'view') {
-            $htmlBt = '<a href="' . $url . '/form/view/' . $id . '" title="Visualização"><i class="fa fa-eye" area-hidden="true"></i></a>&nbsp;&nbsp;';
+            $htmlBt = '<a href="' . $url . '/form/view/' . $id . '" title="Visualização"><i class="fa fa-eye text-success" area-hidden="true"></i></a>&nbsp;&nbsp;';
         } elseif ($tipo == 'voltar') {
             $htmlBt = '<a href="' . $url . '" class="btn btn-outline-secondary" title="Voltar">Voltar</a>';
         }

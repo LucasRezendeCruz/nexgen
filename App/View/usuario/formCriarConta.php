@@ -6,7 +6,7 @@ use App\Library\Formulario;
 
 <script type="text/javascript" src="<?= baseUrl(); ?>assets/js/usuario.js"></script>
 
-<main class="container">
+<main class="container mt-5">
 
     <?= Formulario::titulo("Criar Conta", false, false) ?>
 

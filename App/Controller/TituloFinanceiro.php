@@ -40,7 +40,7 @@ class TituloFinanceiro extends ControllerMain
      */
     public function form()
     {
-        $TituloFinanceiroModel = $this->loadModel("TituloFinanceiro");
+        $TipoFinanceiroModel = $this->loadModel("TipoFinanceiro");
 
         $DbDados = [];
 
@@ -48,7 +48,7 @@ class TituloFinanceiro extends ControllerMain
             $DbDados = $this->model->getById($this->getId());
         }
 
-        $DbDados['aTituloFinanceiro'] = $TituloFinanceiroModel->lista('titulo');
+        $DbDados['aTipoFinanceiro'] = $TipoFinanceiroModel->lista('descricao');
 
         return $this->loadView(
             "restrita/formTituloFinanceiro",
@@ -75,7 +75,7 @@ class TituloFinanceiro extends ControllerMain
                 "observacao"   => $post['observacao'],
                 "statusTitulo"    => $post['statusTitulo'],
                 "dataVencimento"      => $post['dataVencimento'],
-                "tipoFinanceiro"      => $post['tipoFinanceiro'],
+                "tipofinanceiro_id"      => $post['tipofinanceiro_id'],
                 "valorBruto"    => strNumber($post['valorBruto']),
                 "valorLiquido"        => strNumber($post['valorLiquido']),
                 "desconto"     => strNumber($post['desconto'])
