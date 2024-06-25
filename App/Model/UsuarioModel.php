@@ -75,7 +75,7 @@ class UsuarioModel extends ModelMain
                 $this->table,
                 [
                     "nome" => "administrador",
-                    "email" => "administrador@velocityphp.com.br",
+                    "email" => "administrador@nexgen.com.br",
                     "senha" => password_hash("fasm@2024", PASSWORD_DEFAULT),
                     "nivel" => 1
                 ]

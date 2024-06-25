@@ -53,24 +53,6 @@ img {
     box-shadow: var(--box-shadow);
 }
 
-/* IMAGE ZOOM */
-.image-zoom {
-    position: relative;
-    /* overflow: hidden; */
-}
-
-.image-zoom-wrapper {
-    overflow: hidden;
-    position: relative;
-}
-
-.image-zoom-wrapper img{
-     transition: var(--transition);
-}
-
-.image-zoom:hover .image-zoom-wrapper img {
-    transform: scale(1.1);
-}
 
 
 /* NAVBAR */
@@ -130,135 +112,6 @@ img {
 }
 
 
-/* SECTION TITLE */
-.section-title {
-    margin-bottom: 60px;
-}
-
-.section-title .line {
-    width: 60px;
-    height: 4px;
-    background-color: var(--c-brand);
-    margin: 16px auto 24px auto;
-}
-
-.section-title p {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* ICONBOX */
-.iconbox {
-    width: 70px;
-    height: 70px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(var(--c-brand-rgb), 0.1);
-    color: var(--c-brand);
-    font-size: 34px;
-    flex: none;
-}
-
-/* SERVICE */
-.service {
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-}
-
-.service::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: rgba(var(--c-brand-rgb), 0.2);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: var(--transition);
-}
-
-
-.service:hover::after {
-    width: 100%;
-    height: 100%;
-    background: var(--c-brand);
-    z-index: -1;
-}
-
-.service:hover h5,
-.service:hover p {
-    color: white;
-}
-
-.service:hover .iconbox {
-    background-color: rgba(255,255,255,0.2);
-    color: white;
-}
-
-/* COUNTER */
-#counter {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-/* PORTFOLIO */
-.portfolio-item .iconbox {
-    background-color: var(--c-brand);
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.portfolio-item:hover .iconbox {
-    opacity: 1;
-    top: 50%;
-}
-
-/* REVIEW */
-.review small {
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--c-brand);
-}
-
-.review-head {
-    position: relative;
-}
-
-.review-head::after {
-    content: "";
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    bottom: -14px;
-    background-color: white;
-    transform: rotate(45deg);
-}
-
-/* TEAM */
-.team-member-content {
-    background-color: var(--c-brand);
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    width: calc(100% - 50px);
-    transform: translateX(-50%);
-    padding: 24px;
-    transition: var(--transition);
-    opacity: 0;
-}
-
-.team-member:hover .team-member-content {
-    opacity: 1;
-    bottom: 24px;
-}
 
 /* CONTACT */
 #contact {
@@ -355,17 +208,22 @@ form.cadastro select{
 }
 
 
-.div-produtos{
-    background-color: #562877;
-   
-    
+.div-produtos{   
+     justify-content: center;
 }
 
 .card-produto{
-    background-color: #4e57d4;
+    border: 0.5px solid #b9b9b9;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.21);
     padding: 1rem;
     margin: 1rem;
     align-items: center;
+    border-radius: 1rem;
+}
+
+.card-produto img{
+    border-radius: 0.8rem;
 }
 
 .produtos-container {
